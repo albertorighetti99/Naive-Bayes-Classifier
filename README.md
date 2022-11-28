@@ -38,10 +38,18 @@ it is an harmonic average which uses the *precision* and *recall*
 
 All these formulas were computed using **sklearn.metrics** library.
 <br/><br/><br/>
+```
+Accuracy: 0.99601990
+Precision: 0.99285076
+Recall: 1.00000000
+F1: 0.99641256
+```
 
 *The confusion matrix produced.*
 <img alt='confusion_matrix' src='/img/confusion_matrix.png'/> 
 
 
 ### Conclusion
-This program reveals to be able to predict in a satisfactory way the both class.
+This program reveals to be able to predict in a satisfactory way the both class. <br/>
+Naive Bayes Classifier is now able to classify which is the probability of sentence to belong to an **'ENGLSH'** or to a **'NON ENGLISH'** class. <br/>
+During train phase it learns which common words belong to each class and with test it determines the probability given a set of words (sentence) that this are in one class instead the other.
