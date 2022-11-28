@@ -26,10 +26,10 @@ The performance indicators compute were: <br/>
  which indicates how many predictions were correct over all the predictions computed.
  <br/><br/>
 <img alt='precision' src='/img/precision.png' width='30%'/> 
- that determines the correct true predictions over the true real label 
+ that determines the correct true predictions over the true real label.
 <br/><br/>
 <img alt='recall' src='/img/recall.png' width='30%'/> 
- whatever establish the correct true predictions over all the real label
+it establish the correct true predictions over all the real label.
 <br/><br/>
 <img alt='f1' src='/img/f1.png' width='30%'/> 
 it is an harmonic average which uses the *precision* and *recall*
