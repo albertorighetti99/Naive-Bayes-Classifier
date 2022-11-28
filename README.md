@@ -1,7 +1,5 @@
 # Naïve Bayes Classifier NLTK implementation
 
-## The experience
-
 ### Goal
 * * *
 This program is an implementation of the Naïve Bayes Classifier created in order to distinguish ENGLISH from NON ENGLISH words.<br/>
@@ -11,26 +9,15 @@ The dataset has to be more balanced as possible therefore I tried to keep 50% of
 
 ### Work on words
 * * *
-I extract each corpus and applied tokenization on it. Were removed the stopwords including punctuation and numbers. Every word was stemmarized,
-labelizzed corresponding to the language it belongs and added to the dataset. <br/>
-
-```python
-words = word_tokenize(corpus)
-words = [word for word in words if (word not in string.punctuation) and (not word.isnumeric())]
-stopwords_current = stopwords.words(language[i])
-filtered_words = filter_stop_words(words,stopwords_current)
-```
+I extract sentences from each corpus and applied tokenization on it. Were removed the stopwords, including punctuation and numbers. Every word was stemmarized and
+lemmatized too. After that, words were ricomposed in a new filtered sentence.
 
 
 ### Train and Test
 * * *
-After that the dataset was shuffled to allow a fair dataset splitting between train and test. <br/> 
-The function **nltk.NaiveBayesClassifier.train** was used to train the dataset, instead **nltk.NaiveBayesClassifier.test** was used to classify the test set. <br/>
-
-```python
-classifier = nltk.NaiveBayesClassifier.train(train_set)
-predicted_label = classifier.classify(word)
-```
+ Was computed the frequency distribution of each word in every corpora and were stored the
+first 2000 common words. Then every sentece previously created was elaborated in order to have a same input shape for each sentence. The elaboration consisted in transform the sentence in a dictionary where there are all 2000 commons words associated to True or False depending on presence or absence of word in sentence.
+Every of this dictionary was labelized with corresponding **'ENGLISH'** or **'NON ENGLISH'** label and appended to a dataset that was shuffled and splitted 70% in train and 30% in test.
 
 ### Performance indicators
 * * *
