@@ -22,17 +22,21 @@ Every of this dictionary was labelized with corresponding **'ENGLISH'** or **'NO
 ### Performance indicators
 * * *
 The performance indicators compute were: <br/>
-* **ACCURACY** $$ Accuracy = \dfrac {{TP}+{TN}} {{TP}+{TN}+{FP}+{FN}} $$ <br/>
- # this BELOW to check
- which indicates how many predictions were correct over all the real label
- # this ABOVE to check
-
-* **PRECISION** $$ Precision = \dfrac {{TP}} {{TP}+{FP}} $$ <br/>
+<img alt='accuracy' src='/img/accuracy.png' width='30%'/> 
+ which indicates how many predictions were correct over all the predictions computed.
+ <br/><br/>
+<img alt='precision' src='/img/precision.png' width='30%'/> 
  that determines the correct true predictions over the true real label 
-* **RECALL** $$ Recall = \dfrac {{TP}} {{TP}+{FN}} $$ <br/>
+<br/><br/>
+<img alt='recall' src='/img/recall.png' width='30%'/> 
  whatever establish the correct true predictions over all the real label
 <br/><br/>
-All these were computed using **sklearn.metrics** library.
+<img alt='f1' src='/img/f1.png' width='30%'/> 
+it is an harmonic average which uses the *precision* and *recall*
+
+<br/><br/>
+
+All these formulas were computed using **sklearn.metrics** library.
 <br/><br/><br/>
 
 *The confusion matrix produced.*
