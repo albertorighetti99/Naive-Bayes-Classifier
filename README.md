@@ -16,7 +16,7 @@ lemmatized too. After that, words were ricomposed in a new filtered sentence.
 ### Train and Test
 * * *
  Was computed the frequency distribution of each word in every corpora and were stored the
-first 2000 common words. Then every sentece previously created was elaborated in order to have a same input shape for each sentence. The elaboration consisted in transform the sentence in a dictionary where there are all 2000 commons words associated to True or False depending on presence or absence of word in sentence.
+first 2000 common words. Then every sentece previously created was elaborated in order to have a same input shape for each sentence. The elaboration consisted in transform the sentence in a dictionary where there are all 2000 commons words associated to True or False, depending on presence or absence of word in sentence.
 Every of this dictionary was labelized with corresponding **'ENGLISH'** or **'NON ENGLISH'** label and appended to a dataset that was shuffled and splitted 70% in train and 30% in test.
 
 ### Performance indicators
@@ -26,13 +26,13 @@ The performance indicators compute were: <br/>
  which indicates how many predictions were correct over all the predictions computed.
  <br/><br/>
 <img alt='precision' src='/img/precision.png' width='30%'/> 
- that determines the correct true predictions over the true real label.
+ that determines the relevant results.
 <br/><br/>
 <img alt='recall' src='/img/recall.png' width='30%'/> 
-it establish the correct true predictions over all the real label.
+it establish the relevants results that are correctly classified.
 <br/><br/>
 <img alt='f1' src='/img/f1.png' width='30%'/> 
-it is an harmonic average which uses the *precision* and *recall*
+it is an harmonic average which uses the *precision* and *recall*.
 
 <br/><br/>
 
@@ -52,4 +52,4 @@ F1: 0.99641256
 ### Conclusion
 This program reveals to be able to predict in a satisfactory way the both class. <br/>
 Naive Bayes Classifier is now able to classify which is the probability of sentence to belong to an **'ENGLSH'** or to a **'NON ENGLISH'** class. <br/>
-During train phase it learns which common words belong to each class and with test it determines the probability given a set of words (sentence) that this are in one class instead the other.
+During training phase it learns which common words belong to each class and with testing it determines the probability, given a set of words (sentence), that this is in one class instead the other. <br/>
