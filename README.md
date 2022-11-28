@@ -4,7 +4,7 @@
 * * *
 This program is an implementation of the Naïve Bayes Classifier created in order to distinguish ENGLISH from NON ENGLISH words.<br/>
 First I decided to analyse **Genesis** corpora in *two different **english*** : World English Bible (2000) and King James Version (1611);
-and *two different **non english** language*: German (1534, Luther Translation ) and Swedish (1917, Gamla och Nya Testamentet).<br/>
+and *two different **non english** language*: Portuguese (Brazilian Portuguese version) and Swedish (1917, Gamla och Nya Testamentet).<br/>
 The dataset has to be more balanced as possible therefore I tried to keep 50% of data in *english* and the remaining *non english*.
 
 ### Work on words
@@ -40,12 +40,8 @@ All these formulas were computed using **sklearn.metrics** library.
 <br/><br/><br/>
 
 *The confusion matrix produced.*
-![confusion_matrix](confusion_matrix.png)
+<img alt='confusion_matrix' src='/img/confusion_matrix.png'/> 
+
 
 ### Conclusion
-This program reveals to be able to predict in a satisfactory way the *english* words,
-while it seems to don't be so performant in *non english* words prediction.<br/>
-Using a more wide set of corpus probably will improve the performance of the program. <br/>
-But only wheter the balancement will be respected and to achieve this I suggest to use <br/>
-the same corpus translated in more languages or to pay attention to use an enough mixed language content of words.
-
+This program reveals to be able to predict in a satisfactory way the both class.
