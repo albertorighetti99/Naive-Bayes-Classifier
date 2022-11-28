@@ -144,7 +144,6 @@ if __name__ == "__main__":
         else:
             # NON ENGLISH labelization
             dataset.extend(labelization(corpora,0))
-        print(f'*****\t\t{i}\t\t*******')
 
     seed(1)
     # shuffle feature in order to randomize 'ENGLISH' and 'NON ENGLISH' words
